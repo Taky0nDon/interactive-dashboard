@@ -1,0 +1,8 @@
+html {
+    background-color: radial-gradient(
+        circle at 50%,
+        darkgrey 0%,
+        magenta 33%,
+        teal 66%
+    )
+}
