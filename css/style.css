@@ -4,5 +4,8 @@ html {
         darkgrey 0%,
         magenta 33%,
         teal 66%
-    )
+    );
+}
+p {
+    color: darkblue;
 }
