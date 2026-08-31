@@ -1,4 +1,4 @@
-html {
+body {
     background: radial-gradient(
         circle at 50%,
         darkgrey 0%,
@@ -8,6 +8,7 @@ html {
     background-repeat: no-repeat;
     height: 100%;
 }
+
 p {
     color: darkblue;
 }
