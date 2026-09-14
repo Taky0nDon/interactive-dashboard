@@ -12,3 +12,15 @@ body {
 p {
     color: darkblue;
 }
+
+.form-field {
+	display: grid;
+	grid-template-columns: max-content max-content;
+	grid-gap: 5px;
+	justify-content: space-between;
+}
+
+form span {
+	display: flex;
+	justify-content: right;
+}
