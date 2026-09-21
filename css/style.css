@@ -13,14 +13,25 @@ p {
     color: darkblue;
 }
 
+.task-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
 .form-field {
-	display: grid;
-	grid-template-columns: max-content max-content;
-	grid-gap: 5px;
-	justify-content: space-between;
+	display: flex;
+    flex-direction: column;
+}
+
+.task-input {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
 }
 
 form span {
 	display: flex;
-	justify-content: right;
+	justify-content: left;
 }

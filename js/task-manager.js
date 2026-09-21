@@ -12,6 +12,8 @@ function weeklyGoal(userName, dailyGoal, bonusTasks) {
 	// Display string in appropriate element
 	document.getElementById("goal-message").innerHTML = output;
 }
+
+
 // Create event handler
 document.getElementById("goal-btn").addEventListener(
 	"click",

@@ -23,24 +23,25 @@
         <div class="row">
             <!-- Dashboard Content -->
 			<div class="col" id="weekly-tasks">
-				<form class="col-4">
+				<h2>Weekly Task Calculator</h2>
+				<form class="task-form"> 
 					<div class="form-field">
 						<label for="name">
 							Name: 
 						</label>
-						<input type="text" name="name" id="name"></input>
+						<input type="text" name="name" id="name" class="task-input"></input>
 					</div>
 					<div class="form-field">
 						<label for="daily-goal">
 							Daily task goal:
 						</label>
-						<input type="number" name="daily-goal" id="daily-goal"></input>
+						<input type="number" name="daily-goal" id="daily-goal" class="task-input"></input>
 					</div>
 					<div class="form-field">
 						<label for="weekly-bonus">
 							Weekly bonus tasks: 
 						</label>
-						<input type="number" name="weekly-bonus" id="weekly-bonus"></input>
+						<input type="number" name="weekly-bonus" id="weekly-bonus" class="task-input"></input>
 					</div>
 					<br>
 					<span>
@@ -51,9 +52,38 @@
 				</form>
 				<p id="goal-message">
 				</p>
-				<script src="js/task-manager.js"></script>
+			</div>
+			<div class="col" id="metric-converter">
+				<h2>Metric/Imperial Converter</h2>
+				<form id="metric-converter">
+					<label for="initial_value">Convert</label>
+					<input type="number" id="initial_value" name="initial_value"></input>
+					<select id="initial_unit">
+						<option value="in">in</option>
+						<option value="ft">ft</option>
+						<option value="yd">yd</option>
+						<option value="mi">mi</option>
+						<option value="cm">cm</option>
+						<option value="m">m</option>
+						<option value="km">km</option>
+					</select>
+					to
+					<select id="final_unit">
+						<option value="in">in</option>
+						<option value="ft">ft</option>
+						<option value="yd">yd</option>
+						<option value="mi">mi</option>
+						<option value="cm">cm</option>
+						<option value="m">m</option>
+						<option value="km">km</option>
+					</select>
+					<button id="convert-btn">Convert</button>
+				</form>
+				<p id="conversion-result"></p>
+				<script type="text/javascript" src="js/metricConverter.js" defer="true"></script>
 			</div>
         </div>
     </div>
+	<script src="js/task-manager.js"></script>
 </body>
 </html>
