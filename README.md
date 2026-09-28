@@ -59,4 +59,10 @@ BEGIN Metric Conversion
 END
 ```
 
+## Magic Eight Ball
 
+Are you tired of having to think? Don't reinvent the wheel with a large language model. Instead, give this classic a try. Ask your question, and hold the mouse button down on the 8 ball. You'll know it's working when you see the ball begin to shake. When your ready, release the mouse button and your answer will appear. If you don't like the answer you get, just click "Ask another question" and try again.
+
+### Implementation Details
+
+Answers are randomly chosen from an array of strings. Requests for answers to add to the pool can be sent to `magic8ballrequests@proton.me`.

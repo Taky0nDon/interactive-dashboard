@@ -1,33 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-     <!-- Bootstrap  -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<!-- Bootstrap  -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+	<script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+		crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
 	<div class="container">
-	<h1>My Interactive Dashboard</h1>	
-	<p>This dashboard was created by Michael Maggio for the WEB-115 course at Wake Tech</p>
-    <script>
-        document.write("This dashboard demonstrates how JavaScript can be used to create interactive websites.")
-    </script>
-    <!-- The <noscript> is for web browsers with JavaScript rendering disabled. -->
-    <noscript>Unfortunately, your web browser does not support JavaScript.</noscript>
+		<h1>My Interactive Dashboard</h1>
+		<p>This dashboard was created by Michael Maggio for the WEB-115 course at Wake Tech</p>
+		<script>
+			document.write("This dashboard demonstrates how JavaScript can be used to create interactive websites.")
+		</script>
+		<!-- The <noscript> is for web browsers with JavaScript rendering disabled. -->
+		<noscript>Unfortunately, your web browser does not support JavaScript.</noscript>
 	</div>
-    <div class="container">
-        <div class="row">
-            <!-- Dashboard Content -->
+	<div class="container">
+		<div class="row">
+			<!-- Dashboard Content -->
 			<div class="col" id="weekly-tasks">
 				<h2>Weekly Task Calculator</h2>
-				<form class="task-form"> 
+				<form class="task-form">
 					<div class="form-field">
 						<label for="name">
-							Name: 
+							Name:
 						</label>
 						<input type="text" name="name" id="name" class="task-input"></input>
 					</div>
@@ -39,7 +44,7 @@
 					</div>
 					<div class="form-field">
 						<label for="weekly-bonus">
-							Weekly bonus tasks: 
+							Weekly bonus tasks:
 						</label>
 						<input type="number" name="weekly-bonus" id="weekly-bonus" class="task-input"></input>
 					</div>
@@ -82,8 +87,26 @@
 				<p id="conversion-result"></p>
 				<script type="text/javascript" src="js/metricConverter.js" defer="true"></script>
 			</div>
-        </div>
-    </div>
+			<div class="col" id="magic-eight-ball">
+				<script src="magic-eight-ball.js" defer></script>
+				<link rel="stylesheet" href="css/magic-eight-ball.css">
+				<h2 class="heading">Magic Eight Ball</h2>
+				<form>
+					<p>Type a yes/no question below, then click on the Eight Ball below to get your answer!</p>
+					<div class="form-field">
+						<input id="question" name="question" size="80">
+					</div>
+					<div id="magicEightBall">
+						<div id="circle"></div>
+						<img id="ball" src="img/magic-eight-ball.png" />
+					</div>
+					<button id="reset" name="reset" type="reset">Ask another question</button>
+				</form>
+				<br>
+			</div>
+		</div>
+	</div>
 	<script src="js/task-manager.js"></script>
 </body>
+
 </html>
