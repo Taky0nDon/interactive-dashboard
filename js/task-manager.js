@@ -53,6 +53,8 @@ document.getElementById("add-task").addEventListener(
 		taskListElement.appendChild(unorderedListElement);
 		// Capture data from input field
 		const taskToAdd = document.getElementById("task-name").value;
+		// Add task to myTasks array
+		myTasks.push(taskToAdd);
 		// Clear text from input field once captured
 		document.getElementById("task-name").value = "";
 		// Create text element containing captured task
