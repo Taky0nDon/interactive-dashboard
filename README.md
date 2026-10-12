@@ -4,7 +4,7 @@ This project is a web-based dashboard built for WEB-115 at Wake Tech. It is mean
 
 ## TODO: Future Enhancements
 
-- [ ] Add a metric conversion tool.
+- [x] Add a metric conversion tool.
 - [ ] Integrate a task list with array storage.
 - [ ] Add JavaScript logic for a live clock.
 - [X] Add a weekly task goal calculator.
@@ -66,3 +66,7 @@ Are you tired of having to think? Don't reinvent the wheel with a large language
 ### Implementation Details
 
 Answers are randomly chosen from an array of strings. Requests for answers to add to the pool can be sent to `magic8ballrequests@proton.me`.
+
+## Task List
+
+Created field for user to create a list of weekly tasks. User submitted tasks are appended to an unordered list.
