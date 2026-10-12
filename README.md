@@ -5,7 +5,7 @@ This project is a web-based dashboard built for WEB-115 at Wake Tech. It is mean
 ## TODO: Future Enhancements
 
 - [x] Add a metric conversion tool.
-- [ ] Integrate a task list with array storage.
+- [x] Integrate a task list with array storage.
 - [ ] Add JavaScript logic for a live clock.
 - [X] Add a weekly task goal calculator.
 
@@ -69,4 +69,4 @@ Answers are randomly chosen from an array of strings. Requests for answers to ad
 
 ## Task List
 
-Created field for user to create a list of weekly tasks. User submitted tasks are appended to an unordered list.
+Created field for user to create a list of weekly tasks. User submitted tasks are appended to an unordered list and stored in an array.
