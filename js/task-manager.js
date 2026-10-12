@@ -40,14 +40,12 @@ document.getElementById("add-task").addEventListener(
 	function (event){
 		event.preventDefault();
 		// Declare variable to hold unordered list element
-		let unorderedListElement;
 		// Get elements to be manipulated
 		const addTaskButton = document.getElementById("add-task");
 		const taskListElement = document.getElementById("task-list");
-		// Check whether the unordered list already exists. If it does, use it. If not, create it.
-		if (document.getElementById("user-tasks") !== null) {
-			unorderedListElement = document.getElementById("user-tasks");
-		} else {
+		let unorderedListElement = document.getElementById("user-tasks");
+		// Create the unordered list element if it doesn't already exist
+		if (!unorderedListElement) {
 			unorderedListElement = document.createElement("ul");
 			unorderedListElement.setAttribute("id", "user-tasks");
 		}
