@@ -39,7 +39,6 @@ document.getElementById("add-task").addEventListener(
 	"click",
 	function (event){
 		event.preventDefault();
-		// Declare variable to hold unordered list element
 		// Get elements to be manipulated
 		const addTaskButton = document.getElementById("add-task");
 		const taskListElement = document.getElementById("task-list");
