@@ -72,7 +72,6 @@ document.getElementById("add-task").addEventListener(
 // Prevent enter key from submitting form
 const inputFields = document.getElementsByTagName("input")
 for (field of inputFields) {
-	if (field.id === "question") continue;
 	field.addEventListener("keydown", function(event) {
 		if (event.key === "Enter") {
 			event.preventDefault();
