@@ -194,7 +194,6 @@ document.getElementById("add-task").addEventListener(
 	"click",
 	function (event){
 		event.preventDefault();
-		// Declare variable to hold unordered list element
 		// Get elements to be manipulated
 		addTask(event);
 		// Clear text from input field once captured
@@ -211,7 +210,6 @@ document.getElementById("clear-tasks").addEventListener("click", function (event
 // Prevent enter key from submitting form
 const inputFields = document.getElementsByTagName("input")
 for (field of inputFields) {
-	if (field.id === "question") continue;
 	field.addEventListener("keydown", function(event) {
 		if (event.key === "Enter") {
 			event.preventDefault();
