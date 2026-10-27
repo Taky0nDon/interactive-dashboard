@@ -86,26 +86,30 @@ Task objects are stored in the `myTasks` array.
 
 ### Task priority
 
-Important tasks are <span style="color: red">red</span>.
-High priority tasks are <u>underlined</u>.
-Medium priority tasks are *italicized*.
+Task priority is chosen from a dropdown menu prior to adding task.
+Important tasks are red.
+High priority tasks are underlined.
+Medium priority tasks are italicized.
 
 ### Adding tasks
 
-Enter your task. Choose priority and mark if task is importance. Click add task to add it to the list. Adding tasks will print the contents of the `myTasks` array to the console.
+Enter your task. Choose priority and mark if task is important. Click add task to add it to the list. Adding tasks will print the contents of the `myTasks` array to the console.
 
 ### Completing tasks
 
-Tasks can be toggled complete by clicking the check button. Completed tasks are indicated via strike-through text. Clicking the check button again on a ~~completed~~ task will remove the strike-through. Completing a task will cause the contents of the `myTasks` array to be printed to the console.
+Tasks can be toggled complete by clicking the check button. Completed tasks are
+indicated via strike-through text. Clicking the check button again on a
+completed task will remove the strike-through. Completing a task will cause
+the contents of the `myTasks` array to be printed to the console.
 
 ### Removing tasks
 
-Individual tasks can be removed from the list by clicking the X to the right of the task. Removing a task will cause the contents of the `myTasks` array to be printed to the console.
+Individual tasks can be removed from the list and the `myTasks` array by clicking the X to the right of the task. Removing a task will cause the contents of the `myTasks` array to be printed to the console.
 
 ### Editing tasks
 
-Clicking the pencil icon will cause a prompt to appear. Enter the new task into the prompt to update it. Completed tasks cannot be updated. Editing a task will cause the contents of the `myTasks` array to be printed to the console.
+Clicking the pencil icon will cause a prompt to appear. Enter the new task name into the prompt to update it. Completed tasks cannot be updated. Editing a task will cause the contents of the `myTasks` array to be printed to the console. Once added, task priority and importance cannot be edited.
 
 ### Clearing all tasks
 
-Clicking the "Clear Tasks" button will remove all tasks from the DOM and empty the myTasks array. Clearing tasks will cause the contents of the `myTasks` array to be printed to the console.
+Clicking the "Clear Tasks" button will remove all tasks from the DOM and empty the `myTasks` array. Clearing tasks will cause the contents of the `myTasks` array to be printed to the console.
