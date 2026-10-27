@@ -36,7 +36,20 @@
 							<label for="task-name">Enter task:</label>
 							<input type="text" name="task-name" id="task-name"></input>
 						</div>
-						<button id="add-task">Add Task</button>
+						<div class="form-field">
+							<label for="task-priority">Priority:</label>
+							<select name="task-priority" id="task-priority">
+								<option value="low">Low</option>
+								<option value="medium">Medium</option>
+								<option value="high">High</option>
+							</select>
+						</div>
+						<div class="important-checkbox">
+							<label for="is-important">Important?</label>
+							<input type="checkbox" name="is-important" id="is-important"></input>
+						</div>
+						<button type="submit" id="add-task">Add Task</button>
+						<button id="clear-tasks">Clear Tasks</button>
 					</form>
 				</div>
 				<h2>Weekly Task Calculator</h2>

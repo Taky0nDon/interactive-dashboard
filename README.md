@@ -70,3 +70,42 @@ Answers are randomly chosen from an array of strings. Requests for answers to ad
 ## Task List
 
 Created field for user to create a list of weekly tasks. User submitted tasks are appended to an unordered list and stored in an array.
+
+## Updated Task List (object based)
+
+User tasks are now stored in an array of objects containing the following properties:
+1. id (integer)
+2. name (string)
+3. priority (string) ("low", "medium", "high")
+4. isImportant (bool)
+5. isCompleted (bool)
+6. domNode (references the node containing the task in the DOM)
+
+Tasks are still arranged as elements of an unordered list. Each task has 3 buttons: remove, edit, and complete.
+Task objects are stored in the `myTasks` array.
+
+### Task priority
+
+Important tasks are <span style="color: red">red</span>.
+High priority tasks are <u>underlined</u>.
+Medium priority tasks are *italicized*.
+
+### Adding tasks
+
+Enter your task. Choose priority and mark if task is importance. Click add task to add it to the list. Adding tasks will print the contents of the `myTasks` array to the console.
+
+### Completing tasks
+
+Tasks can be toggled complete by clicking the check button. Completed tasks are indicated via strike-through text. Clicking the check button again on a ~~completed~~ task will remove the strike-through. Completing a task will cause the contents of the `myTasks` array to be printed to the console.
+
+### Removing tasks
+
+Individual tasks can be removed from the list by clicking the X to the right of the task. Removing a task will cause the contents of the `myTasks` array to be printed to the console.
+
+### Editing tasks
+
+Clicking the pencil icon will cause a prompt to appear. Enter the new task into the prompt to update it. Completed tasks cannot be updated. Editing a task will cause the contents of the `myTasks` array to be printed to the console.
+
+### Clearing all tasks
+
+Clicking the "Clear Tasks" button will remove all tasks from the DOM and empty the myTasks array. Clearing tasks will cause the contents of the `myTasks` array to be printed to the console.

@@ -13,12 +13,37 @@ p {
     color: darkblue;
 }
 
+.important-checkbox {
+    flex-direction: row;
+}
+
 .task-form {
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
 
+.task-li {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.task-buttons {
+    display: flex;
+    flex-direction: row;
+}
+
+svg {
+    width: 1.25rem;
+    height: 1.25rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: transparent;
+	border: none;
+}
 
 .form-field {
 	display: flex;
