@@ -12,6 +12,7 @@
 		integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
 		crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/digital-clock.css">
 </head>
 
 <body>
@@ -27,6 +28,17 @@
 	<div class="container">
 		<div class="row">
 			<!-- Dashboard Content -->
+			<!-- Digital Clock-->
+			<div class="col" id="digital-clock">
+				<h3>Current Time & Date</h3>
+				<p id="clock-face">
+
+				</p>
+				<p id="calendar-date">
+
+				</p>
+
+			</div>
 			<div class="col" id="weekly-tasks">
 				<div id="task-list">
 					<h3>Weekly Task List</h3>
@@ -130,6 +142,7 @@
 			</div>
 		</div>
 	</div>
+	<script src="js/digital-clock.js" defer="true"></script>
 	<script src="js/task-manager.js"></script>
 </body>
 
