@@ -20,19 +20,25 @@ function updateClock(clockEl, calEl) {
     );
     // Determine AM or PM
     const session = hour >= 12 ? "PM" : "AM";
+    currentSession.session = session;
 
     // Set the innerHTML of the clock-face element
     clockEl.innerHTML = `
         <div id="time">
             ${hour}:${min}:${sec}
         </div>
-        <div id="session">
-            ${session}
-        </div>`;
+        `;
+
+    // Change the background of the clock-face depending on the session.
+    if (currentSession.session === "PM") {
+        clock.style.backgroundColor = "purple";
+    } else clock.style.backgroundColor = "none";
+
     // Set inner text of calendar-date element
     calEl.innerText = calDate;
 }
 
 const clock = document.getElementById("clock-face");
 const calendar = document.getElementById("calendar-date");
+const currentSession = {}
 setInterval(updateClock, 1000, clock, calendar);
