@@ -19,6 +19,10 @@
     margin-bottom: 0;
 }
 
+#time.PM {
+    background: purple;
+}
+
 #session {
     margin-left: clamp(0.25rem, .5rem, 1rem);
 }
