@@ -1,1 +1,29 @@
-/*TODO Create at least 2 styles*/
+#digital-clock {
+    border: 1px solid red;
+    border-radius: 25%;
+    align-self: flex-start;
+}
+
+#digital-clock * {
+    justify-self: center;
+}
+
+#digital-clock h3 {
+    margin-top: clamp(0.25rem, 0.5rem, 1rem);
+}
+
+#clock-face {
+    display: flex;
+    flex-direction: row;
+    color: greenyellow;
+    margin-bottom: 0;
+}
+
+#session {
+    margin-left: clamp(0.25rem, .5rem, 1rem);
+}
+
+#calendar-date {
+    font-size: larger;
+    font-weight: bold;
+}
